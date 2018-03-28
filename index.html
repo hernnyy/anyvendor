@@ -14,6 +14,18 @@
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-97228259-2"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-97228259-2');
+	</script>
+	<script type="text/javascript" src="js/active.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+
 </head>
 
 <body>
@@ -89,16 +101,16 @@
 					<h5 class="card-title">Tengen Toppa Gurren Lagann</h5>
 					<p class="card-text">3D Model avaiable.</p>
 
-					<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+					<!-- <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
 						<input type="hidden" name="cmd" value="_s-xclick">
 						<input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----
 						">
 						<input type="image" src="https://www.paypalobjects.com/es_XC/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal, la forma más segura y rápida de pagar en línea.">
 						<img alt="" border="0" src="https://www.paypalobjects.com/es_XC/i/scr/pixel.gif" width="1" height="1">
-					</form>
+					</form> -->
 
 
-					<a mp-mode="dftl" href="https://www.mercadopago.com/mla/checkout/start?pref_id=97322403-94e11216-5b3b-47a1-bb29-85d70bd767d6" name="MP-payButton" class='btn btn-primary blue-ar-m-rn-arall'>Pay with MercadoPago</a>
+					<a mp-mode="dftl" href="https://www.mercadopago.com/mla/checkout/start?pref_id=97322403-94e11216-5b3b-47a1-bb29-85d70bd767d6" name="MP-payButton" class='btn btn-primary blue-ar-m-rn-arall'>Buy it!</a>
 					<script type="text/javascript">
 					(function(){function $MPC_load(){window.$MPC_loaded !== true && (function(){var s = document.createElement("script");s.type = "text/javascript";s.async = true;s.src = document.location.protocol+"//secure.mlstatic.com/mptools/render.js";var x = document.getElementsByTagName('script')[0];x.parentNode.insertBefore(s, x);window.$MPC_loaded = true;})();}window.$MPC_loaded !== true ? (window.attachEvent ?window.attachEvent('onload', $MPC_load) : window.addEventListener('load', $MPC_load, false)) : null;})();
 					</script>
@@ -128,11 +140,11 @@
 				<div class="card-header">
 					Sale
 				</div>
-				<img class="card-img-top" src="https://orig00.deviantart.net/6c12/f/2013/068/3/5/wall_e_blender_3d_models_by_pixeloz-d5xg21w.jpg" alt="preview image">
+				<img class="card-img-top" src="https://image.ibb.co/jsTvZn/Dragonair_A4.png" alt="preview image">
 				<div class="card-body">
-					<h5 class="card-title">Mod1</h5>
+					<h5 class="card-title">Mod</h5>
 					<p class="card-text">3d model avaiable.</p>
-					<a href="#" class="btn btn-primary">Buy now!</a>
+					<a href="#" class="btn btn-primary" onclick="traceit(this)">Buy now!</a>
 				</div>
 			</div>
 			<div class="card text-center bg-secondary text-white">		
