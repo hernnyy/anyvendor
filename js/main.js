@@ -1,4 +1,4 @@
 window.onload = initPageFunction;
 function initPageFunction() {
-            // alert('ok');
-        }
+	// alert('ok');
+}
