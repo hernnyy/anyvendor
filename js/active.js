@@ -1,6 +1,6 @@
-function traceit(evnt){
-	gtag('event', 'click_download', {
-	  'article': '127000',
-	  'price': '0'
+function traceit(code,price){
+	gtag('event', 'click_download_'+code, {
+	  'article': code,
+	  'price': price
 	});
 }

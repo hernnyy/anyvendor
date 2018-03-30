@@ -6,12 +6,12 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link href="https://fonts.googleapis.com/css?family=Bitter" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Anton|Bitter" rel="stylesheet">
 	
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
-	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<!--<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
 	<!-- Global site tag (gtag.js) - Google Analytics -->
@@ -23,6 +23,7 @@
 
 	  gtag('config', 'UA-97228259-2');
 	</script>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<script type="text/javascript" src="js/active.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>
 
@@ -40,7 +41,7 @@
         <a class="nav-link" href="#">Inicio <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Contactenos</a>
+        <a class="nav-link" href="http://ikaroira.com">Contactenos</a>
       </li>
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -91,12 +92,12 @@
 	  </div>
 	</div> -->
 <section>
-	<div class="card-columns" id="cardContainer">
+	<div class="card-columns gallery" id="cardContainer">
 			<div class="card text-center bg-secondary text-white">		
 				<div class="card-header">
 					Sale 9.99USD
 				</div>
-				<img class="card-img-top" src="datamodel/models/1/mini/mini.jpg" alt="preview image">
+				<img class="card-img-top thumbnail zoom" src="datamodel/models/1/mini/mini.jpg" alt="preview image">
 				<div class="card-body">
 					<h5 class="card-title">Tengen Toppa Gurren Lagann</h5>
 					<p class="card-text">3D Model avaiable.</p>
@@ -116,49 +117,7 @@
 					</script>
 				</div>
 			</div>
-			<div class="card text-center bg-secondary text-white">		
-				<div class="card-header">Sale</div>
-				<img class="card-img-top" src="https://orig00.deviantart.net/6c12/f/2013/068/3/5/wall_e_blender_3d_models_by_pixeloz-d5xg21w.jpg" alt="preview image">
-				<div class="card-body">
-					<h5 class="card-title">Mod1</h5>
-					<p class="card-text">3d model avaiable.</p>
-					<a href="#" class="btn btn-primary">Buy now!</a>
-				</div>
-			</div>
-			<div class="card text-center bg-secondary text-white">		
-				<div class="card-header">
-					Sale
-				</div>
-				<img class="card-img-top" src="https://orig00.deviantart.net/6c12/f/2013/068/3/5/wall_e_blender_3d_models_by_pixeloz-d5xg21w.jpg" alt="preview image">
-				<div class="card-body">
-					<h5 class="card-title">Mod1</h5>
-					<p class="card-text">3d model avaiable.</p>
-					<a href="#" class="btn btn-primary">Buy now!</a>
-				</div>
-			</div>
-			<div class="card text-center bg-secondary text-white">		
-				<div class="card-header">
-					Sale
-				</div>
-				<img class="card-img-top" src="https://image.ibb.co/jsTvZn/Dragonair_A4.png" alt="preview image">
-				<div class="card-body">
-					<h5 class="card-title">Mod</h5>
-					<p class="card-text">3d model avaiable.</p>
-					<a href="#" class="btn btn-primary" onclick="traceit(this)">Buy now!</a>
-				</div>
-			</div>
-			<div class="card text-center bg-secondary text-white">		
-				<div class="card-header">
-					Sale
-				</div>
-				<img class="card-img-top" src="https://orig00.deviantart.net/6c12/f/2013/068/3/5/wall_e_blender_3d_models_by_pixeloz-d5xg21w.jpg" alt="preview image">
-				<div class="card-body">
-					<h5 class="card-title">Mod1</h5>
-					<p class="card-text">3d model avaiable.</p>
-					<a href="#" class="btn btn-primary">Buy now!</a>
-					<a href="datamodel/models/1/mdel/mini.zip" download="Acme.zip" class="btn btn-primary">Get</a>
-				</div>
-			</div>
+			<!-- Complete -->
 	</div>
 </section>
 <section>
