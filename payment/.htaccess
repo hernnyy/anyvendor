@@ -1,15 +1,8 @@
 # this stops download files being gzipped
-RewriteEngine On
+#RewriteEngine On
+#RewriteCond %{REQUEST_FILENAME} !-f
+#RewriteRule ^([^\.]+)$ $1.html [NC,L]
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME} !-f
-RewriteRule ^([^\.]+)$ $1.html [NC,L]
-SetOutputFilter DEFLATE
-#SetEnvIfNoCase Request_URI \.php$ no-gzip dont-vary
-#SetEnvIf Request_URI download\.php$ no-gzip dont-vary
-AddType application/octet-stream .zip
-SetEnvIf Request_URI ^/payment/ no-gzip=1
-<FilesMatch \.php$>
-    SetEnv no-gzip 1
-</FilesMatch>
-<FilesMatch \.zip$>
-    SetEnv no-gzip 1
-</FilesMatch>
+RewriteRule ^success/(.*)/(.*)/$ success.php?codea=$1&codeb=$2 [L]

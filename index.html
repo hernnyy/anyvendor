@@ -5,7 +5,7 @@
 
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<link href="https://fonts.googleapis.com/css?family=Bitter" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Anton|Bitter" rel="stylesheet">
 	
@@ -14,6 +14,7 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+	
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-97228259-2"></script>
 	<script>
@@ -23,22 +24,24 @@
 
 	  gtag('config', 'UA-97228259-2');
 	</script>
+
 	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<script type="text/javascript" src="js/active.js"></script>
+	<script type="text/javascript" src="js/prime.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>
+	<script type="text/javascript" src="js/active.js"></script>
 
 </head>
 
 <body>
 	<nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="#">Any vendor</a>
+  <a class="navbar-brand" href="/">Any vendor</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
 	<div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
-        <a class="nav-link" href="#">Inicio <span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="/">Inicio <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="http://ikaroira.com">Contactenos</a>
@@ -56,9 +59,9 @@
         </div>
       </li>
     </ul>
-    <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="Buscar" placeholder="Buscar" aria-label="Buscar">
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
+    <form class="form-inline my-2 my-lg-0" action="javascript:void(0);">
+      <input id="txtSearch" class="form-control mr-sm-2" type="Buscar" placeholder="Buscar" aria-label="Buscar">
+      <button class="btn btn-outline-success my-2 my-sm-0" onclick="searchCard();">Buscar</button>
     </form>
   </div>
 </nav>
@@ -91,8 +94,8 @@
 	    <a class="dropdown-item" href="#">Ecuaciones de primer grado con una incognita</a>
 	  </div>
 	</div> -->
-<section>
-	<div class="card-columns gallery" id="cardContainer">
+	<section>
+		<div class="card-columns gallery" id="cardContainer">
 			<div class="card text-center bg-secondary text-white">		
 				<div class="card-header">
 					Sale 9.99USD
@@ -111,16 +114,16 @@
 					</form> -->
 
 
-					<a mp-mode="dftl" href="https://www.mercadopago.com/mla/checkout/start?pref_id=97322403-94e11216-5b3b-47a1-bb29-85d70bd767d6" name="MP-payButton" class='btn btn-primary blue-ar-m-rn-arall'>Buy it!</a>
+					<a mp-mode="dftl" href="https://www.mercadopago.com/mla/checkout/start?pref_id=97322403-94e11216-5b3b-47a1-bb29-85d70bd767d6" name="MP-payButton" class='blue-ar-m-rn-arall'>Comprar</a>
 					<script type="text/javascript">
 					(function(){function $MPC_load(){window.$MPC_loaded !== true && (function(){var s = document.createElement("script");s.type = "text/javascript";s.async = true;s.src = document.location.protocol+"//secure.mlstatic.com/mptools/render.js";var x = document.getElementsByTagName('script')[0];x.parentNode.insertBefore(s, x);window.$MPC_loaded = true;})();}window.$MPC_loaded !== true ? (window.attachEvent ?window.attachEvent('onload', $MPC_load) : window.addEventListener('load', $MPC_load, false)) : null;})();
 					</script>
 				</div>
 			</div>
 			<!-- Complete -->
-	</div>
-</section>
-<section>
+		</div>
+	</section>
+<!-- <section>
 		<table class="table table-striped">
 			<thead>
 			<tr>
@@ -139,7 +142,7 @@
 			</tr>
 			</tbody>
 		</table>
-</section>
+</section> -->
 </div>
 </body>
 </html>
