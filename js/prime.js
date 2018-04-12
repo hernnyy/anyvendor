@@ -52,10 +52,15 @@ function firstMainLoad(data){
     		co.link = store[++j];
     		list.push(co)
     	};
-      };
-      var cards = $("#cardContainer");
-      for (var i = 0; i < list.length; i++) {
-    	addCardToView(cards,list[i]);
-     }
-      mainListView = list;
+    };
+    var cardContainer = $("#cardContainer");
+    var cards = cardContainer[0].children;
+    for (var i = 0; i < cards.length; i++) {
+    	cards[i].getElementsByClassName("buttonsContainer")[0];
     }
+
+    for (var i = 0; i < list.length; i++) {
+    	addCardToView(cardContainer,list[i]);
+    }
+    mainListView = list;
+}
